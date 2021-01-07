@@ -1,0 +1,41 @@
+// Styles
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+// Layout
+.container{
+    width: 1040px;
+    margin: 0 auto;
+}
+
+// Spacers
+@each $size in 0, 1, 2, 3, 4, 6 {
+    .mt-#{ $size }{
+        margin-top: $size + 0rem;
+    }
+    .mb-#{ $size }{
+        margin-bottom: $size + 0rem;
+    }
+    .pt-#{ $size }{
+        padding-top: $size + 0rem;
+    }
+    .pb-#{ $size }{
+        padding-bottom: $size + 0rem;
+    }
+}
+
+// Center text
+.text-center{
+    text-align: center;
+}
+
+// Display-flex 
+.disp-flex{ 
+    display: flex;    
+} 
+
+

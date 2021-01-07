@@ -1,0 +1,24 @@
+// Hero section
+
+.section-hero{
+    height: 390px;
+    background-color: lightblue;
+    //background-image: url("../images/bg-hero-home.jpg");
+}
+
+.comic-section{
+    background-color: $back-home-list;
+        .list-comics{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 2rem;
+             img{
+                 width: 100%;
+             }
+             h4{
+                 a{
+                     color: $white-col;
+                 }
+             }
+        }
+}
