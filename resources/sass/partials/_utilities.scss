@@ -4,12 +4,44 @@ li{
 }
 a{
     text-decoration: none;
+    cursor: pointer;
+}
+i{
+    cursor: pointer;
 }
 
 // Layout
 .container{
-    width: 1040px;
+    max-width: 1170px;
     margin: 0 auto;
+}
+.btn-blue{
+    color: $white-col;
+    background-color: $blue-col-homepage;
+    outline: none;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 6px 32px;
+}
+.btn-footer{
+    color: $white-col;
+    background-color: $footer-bar;;
+    outline: none;
+    border: 1px solid $blue-col-homepage;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 6px 20px;
+}
+.relative{
+    position: relative;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 // Spacers
@@ -37,5 +69,8 @@ a{
 .disp-flex{ 
     display: flex;    
 } 
+.disp-flex-inline{
+    display: inline-flex;
+}
 
 

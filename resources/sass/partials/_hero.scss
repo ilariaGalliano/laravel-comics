@@ -1,24 +1,48 @@
 // Hero section
-
-.section-hero{
-    height: 390px;
-    background-color: lightblue;
-    //background-image: url("../images/bg-hero-home.jpg");
-}
-
-.comic-section{
-    background-color: $back-home-list;
-        .list-comics{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-gap: 2rem;
-             img{
-                 width: 100%;
-             }
-             h4{
-                 a{
-                     color: $white-col;
+.hero{
+    .blue-block{
+        background-color: $blue-col-homepage;
+        height: 20px;
+    }
+    .section-hero{
+        height: 390px;
+        background-image: url("../images/bg-hero-home.jpg");
+            
+    }
+    .comic-section{
+        background-color: $back-home-list;
+        height: 955px;
+            .list-comics{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                grid-gap: 2rem;
+                 img{
+                     width: 100%;
                  }
-             }
-        }
+                 h4{
+                     a{
+                         color: $white-col;
+                     }
+                 }
+            }
+            button > span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+    }
+    .comic-section-bottom{
+        background-color: $blue-col-homepage;
+            ul{
+                justify-content: space-between;
+                align-content: center;
+                li{
+                    img{
+                        width: 50px;
+                        height: 60px;
+                    }
+                }
+            }
+            
+    }
 }

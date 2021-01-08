@@ -1,4 +1,33 @@
 // Show section
-.comic-section{
-    color: $white-col;
+.hero-detail{
+    .blue-bar{
+        background-color: $blue-col-homepage;
+        height: 80px;
+    }
+    .section-hero{
+        height: 390px;
+        background-image: url("../images/bg-hero-home.jpg");
+    }
+    .comic-section{
+        background-color: $white-col;
+        color: $gray-col;
+            h1{
+                color: $h1-det-col;
+            }
+            .price{
+                width: 120px;
+                background-color: $green-col;
+                padding: 10px;
+            }
+            .description{
+                font-size: 20px;
+            }
+    }
 }
+
+
+
+
+
+
+

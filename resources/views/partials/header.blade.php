@@ -1,18 +1,21 @@
 {{-- Header  --}}
 
 <header class="header-content">
-    <div class="container">
+    <div class="section-header">
         <nav class="nav-top">
-            <span>DC Power visa</span>
-            <span>Additional DC sites &#9660; </span>
+
+          <div class="container nav-text-top">
+            <span>DC Power™ visa®</span>
+            <span>Additional DC sites <i class="fas fa-caret-down"></i> </span>
+          </div>
+
         </nav>
-        <nav class="nav-bottom">
-            <a href="/">
-                <img src="{{ asset('images/logo.png')}}" alt="Dc Comics">
-            </a>
+        <nav class="nav-bottom container pt-1">
             
-        
             <ul class="disp-flex">
+                <a href="/">
+                    <img src="{{ asset('images/logo.png')}}" alt="Dc Comics">
+                </a>
                 <li>
                     <a href="">Characters</a>
                 </li>
@@ -41,10 +44,13 @@
                     <a href="">News</a>
                 </li>
                 <li>
-                    <a href="">Shop &#9660;</a>
+                    <a href="">Shop <i class="fas fa-caret-down"></i></a>
+                </li>
+                <li>
+                    <input type="text" style="width: 90px" placeholder="Search"> <i class="fas fa-search"></i>
                 </li>
             </ul>
-           <input type="text" placeholder="search"> <i class="fas fa-search"></i>
+         
         </nav>
 
     </div>

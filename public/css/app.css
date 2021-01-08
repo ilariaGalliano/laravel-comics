@@ -6,7 +6,6 @@
 body {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
-  padding: 1rem 0;
 }
 
 li {
@@ -15,11 +14,47 @@ li {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
 }
 
 .container {
-  width: 1040px;
+  max-width: 1170px;
   margin: 0 auto;
+}
+
+.btn-blue {
+  color: #ffffff;
+  background-color: #0282f9;
+  outline: none;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 6px 32px;
+}
+
+.btn-footer {
+  color: #ffffff;
+  background-color: #303030;
+  outline: none;
+  border: 1px solid #0282f9;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 6px 20px;
+}
+
+.relative {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .mt-0 {
@@ -126,30 +161,177 @@ a {
   display: flex;
 }
 
-.nav-bottom li {
-  padding-right: 10px;
+.disp-flex-inline {
+  display: inline-flex;
 }
 
-.section-hero {
+header .nav-top {
+  background-color: #0282f9;
+}
+header .nav-top .nav-text-top {
+  display: flex;
+  justify-content: flex-end;
+}
+header .nav-top span {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 5px 0;
+  cursor: pointer;
+}
+header .nav-top span:first-child {
+  padding-right: 40px;
+}
+header .nav-top span i {
+  font-size: 18px;
+}
+header .nav-bottom img {
+  width: 85px;
+}
+header .nav-bottom ul {
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-bottom ul li a {
+  color: #1c1c1c;
+  text-transform: uppercase;
+}
+header .nav-bottom ul li a i {
+  font-size: 18px;
+  color: #0282f9;
+}
+header .nav-bottom ul li input {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-bottom: 1px solid #0282f9;
+  text-align: right;
+}
+
+footer .top-footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+footer .top-footer p {
+  color: #797979;
+  width: 60%;
+}
+footer .top-footer p a {
+  color: #0282f9;
+}
+footer .top-footer .col-left ul,
+footer .top-footer .col-centre ul,
+footer .top-footer .col-right ul {
+  padding: 0;
+  margin-right: 10px;
+}
+footer .top-footer .col-left ul li,
+footer .top-footer .col-centre ul li,
+footer .top-footer .col-right ul li {
+  color: #797979;
+  padding: 2px 0;
+  margin: 0;
+}
+footer .top-footer .col-left ul li h3,
+footer .top-footer .col-centre ul li h3,
+footer .top-footer .col-right ul li h3 {
+  color: #ffffff;
+}
+footer .top-footer .column-right-img {
+  position: relative;
+}
+footer .top-footer .column-right-img img {
+  width: 500px;
+  position: absolute;
+  transform: translate(45%, -5%);
+}
+footer .bottom-footer {
+  background-color: #303030;
+}
+footer .bottom-footer .social-flex {
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom-footer .list-social li {
+  padding-right: 15px;
+}
+footer .bottom-footer .list-social li:first-child {
+  color: #0282f9;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 20px;
+  align-self: center;
+}
+footer .bottom-footer .list-social li i {
+  font-size: 20px;
+  color: #303030;
+  background-color: #797979;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.hero .blue-block {
+  background-color: #0282f9;
+  height: 20px;
+}
+.hero .section-hero {
   height: 390px;
-  background-color: lightblue;
+  background-image: url("../images/bg-hero-home.jpg");
 }
-
-.comic-section {
+.hero .comic-section {
   background-color: #1c1c1c;
+  height: 955px;
 }
-.comic-section .list-comics {
+.hero .comic-section .list-comics {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 2rem;
 }
-.comic-section .list-comics img {
+.hero .comic-section .list-comics img {
   width: 100%;
 }
-.comic-section .list-comics h4 a {
+.hero .comic-section .list-comics h4 a {
   color: #ffffff;
 }
+.hero .comic-section button > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.hero .comic-section-bottom {
+  background-color: #0282f9;
+}
+.hero .comic-section-bottom ul {
+  justify-content: space-between;
+  align-content: center;
+}
+.hero .comic-section-bottom ul li img {
+  width: 50px;
+  height: 60px;
+}
 
-.comic-section {
-  color: #ffffff;
+.hero-detail .blue-bar {
+  background-color: #0282f9;
+  height: 80px;
+}
+.hero-detail .section-hero {
+  height: 390px;
+  background-image: url("../images/bg-hero-home.jpg");
+}
+.hero-detail .comic-section {
+  background-color: #ffffff;
+  color: #797979;
+}
+.hero-detail .comic-section h1 {
+  color: #003f5e;
+}
+.hero-detail .comic-section .price {
+  width: 120px;
+  background-color: #55ba59;
+  padding: 10px;
+}
+.hero-detail .comic-section .description {
+  font-size: 20px;
 }

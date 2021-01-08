@@ -1,6 +1,51 @@
 // Header
-.nav-bottom{
-    li{
-        padding-right: 10px;
+header{
+    // Nav top
+    .nav-top{
+        background-color: $blue-col-homepage;
+        .nav-text-top{
+            display: flex;
+            justify-content: flex-end;
+        }
+        span{
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $white-col;
+            padding: 5px 0;
+            cursor: pointer;
+            &:first-child{
+                padding-right: 40px;
+            }
+            i{
+                font-size: 18px;
+            }
+        }
+    }
+    // Nav bottom
+    .nav-bottom{
+        img{
+            width: 85px;
+        }
+        ul{
+            justify-content: space-between;
+            align-items: center;
+            li{
+                a{
+                    color: $back-home-list;
+                    text-transform: uppercase;
+                    i{
+                        font-size: 18px;
+                        color: $blue-col-homepage;
+                    }
+                }
+                input{
+                    outline: none;
+                    border: none;
+                    font-size: 16px;
+                    border-bottom: 1px solid $blue-col-homepage;
+                    text-align: right;
+                }
+            }
+        }
     }
 }
