@@ -11,20 +11,137 @@
     .comic-section{
         background-color: $white-col;
         color: $gray-col;
+        display: flex;
             h1{
                 color: $h1-det-col;
             }
-            .price{
-                width: 120px;
+            .text-available{
+                padding: 8px;
+                width: 80%;
                 background-color: $green-col;
-                padding: 10px;
+                li{
+                    padding-right: 10px;
+                    &:first-child{
+                        margin-right: 160px;
+                    }
+                }
             }
             .description{
+                width: 80%;
                 font-size: 20px;
             }
+            .adv{
+                img{
+                    width: 300px;
+                }
+            }
+            .social-col{
+                .list-boxes{
+                    position: absolute;
+                    top: -10%;
+                    right: -135px;
+                            .box-blue{
+                                width: 50px;
+                                height: 50px; 
+                                background-color: $h1-det-col;
+                            }
+                            .box-lt-blue{
+                                width: 50px;
+                                height: 50px; 
+                                background-color: $blue-light;
+                            }
+                            .box-red{
+                                width: 50px;
+                                height: 50px; 
+                                background-color: $red-soc;
+                            }
+                            .box-orange{
+                                width: 50px;
+                                height: 50px; 
+                                background-color: $orange-soc;
+                            }
+                            i{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 10px;
+                                font-size: 20px;
+                                color: $white-col;
+                            }
+                }
+                
+            }
+    }
+   
+}
+
+
+// Info comics section
+.info-content {
+    background: $add-info-det;
+    border-top: 1px solid rgba($white-col, .3);
+}
+.info-part {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    .talent,
+    .specs {
+        padding: 20px;
+        width: 100%;
+        color: $h1-det-col;
+    }
+    .talent-list,
+    .specs-list{
+        padding: 0;
+        .talent-item,
+        .specs-item {
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            border-top: 1px solid rgba($white-col, 0.8);
+            border-bottom: 1px solid rgba($white-col, 0.8);
+            span {
+                min-width: 300px;
+                text-align: left;
+                &.black{
+                    color: $back-home-list;
+                }
+                &.blue-lt {
+                    color: $blue-light;
+                .dot {
+                    color: $h1-det-col;
+                }
+                }
+            }
+         }
+    }
+    h3 {
+        font-size: 24px;
     }
 }
 
+
+// Comics details
+.comic-detailed {
+    border-top: 1px solid rgba($white-col, .3);
+    background: $add-info-det;
+        .info-list-bottom{
+            padding: 0;
+            .info-item-bottom {
+                border: 1px solid rgba($white-col, .3);
+                border-bottom: none;
+                padding: 20px;
+                a{
+                    color: $gray-col;
+                    h5{
+                        text-transform: uppercase;
+                        padding-right: 25px;
+                    }
+                }
+            }      
+        }      
+}
 
 
 

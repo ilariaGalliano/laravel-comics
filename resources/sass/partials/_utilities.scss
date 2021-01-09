@@ -23,15 +23,25 @@ i{
     text-transform: uppercase;
     font-size: 18px;
     padding: 6px 32px;
+    cursor: pointer;
+        &:hover{
+            background-color: rgba($blue-col-homepage , 0.5) ;
+            transition: 0.4s;
+        }
 }
 .btn-footer{
     color: $white-col;
-    background-color: $footer-bar;;
+    background-color: $footer-bar;
     outline: none;
     border: 1px solid $blue-col-homepage;
     text-transform: uppercase;
     font-size: 18px;
     padding: 6px 20px;
+    cursor: pointer;
+        &:hover{
+            background-color: rgba($blue-col-homepage , 0.8) ;
+            transition: 0.4s;
+        }
 }
 .relative{
     position: relative;

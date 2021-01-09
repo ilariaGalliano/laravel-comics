@@ -5,7 +5,7 @@
         <nav class="nav-top">
 
           <div class="container nav-text-top">
-            <span>DC Power™ visa®</span>
+            <span>DC Power™ visa<small>®</small></span>
             <span>Additional DC sites <i class="fas fa-caret-down"></i> </span>
           </div>
 

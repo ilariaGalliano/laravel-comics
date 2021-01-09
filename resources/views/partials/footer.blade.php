@@ -7,7 +7,7 @@
     
        <div class="disp-flex column-left">
 
-        <div class="col-left disp-flex">
+            <div class="col-left disp-flex">
                 <ul>
                     <li> 
                         <h3>Dc Comics</h3>
@@ -43,7 +43,7 @@
                         Shop 
                     </li>
                     <li> 
-                        <h3>Shop</h3>
+                        <h3 class="shop">Shop</h3>
                     </li>
                     <li>
                         Shop DC
@@ -53,7 +53,7 @@
                     </li>
                 </ul>
 
-        <div class="col-centre">
+            <div class="col-centre">
                 <ul>
                     <li> 
                         <h3>Dc</h3>
@@ -92,7 +92,7 @@
                         Contact Us
                     </li>
                 </ul> 
-        </div>
+            </div>
 
             <div class="col-right">
                 <ul>
@@ -123,11 +123,12 @@
         </div>
        </div>
              
-            <div class="pt-1">
-                <p>All Site Content TM and © 2020 DC Entertainment, unless otherwise <a href="">noted here.</a> All right reserved.
-                    <a href="">Cookies Settings</a>
-                </p>
-            </div>
+        <div class="pt-1">
+            <p>All Site Content TM and © 2020 DC Entertainment, unless otherwise <a href="">noted here.</a> All right reserved.
+                <a href="">Cookies Settings</a>
+            </p>
+        </div>
+
     
     </section>
 
